@@ -47,6 +47,7 @@ def remplir_formulaire(request, id_template):
             html_rempli = template.html.format(**donnees)
             pdf = HTML(string=html_rempli).write_pdf() #pdf à l'aide de weasyprint !
             res = HttpResponse(pdf, content_type="application/pdf") #on précise le type pour ne pas avoir de conflit d'interprétation
+            res["Content-Disposition"] = f'attachment; filename="{template.nom}.pdf"' #force le téléchargement
             return res
     else:
         formulaire = formulaireGenere() #renvoie le formulaire vide si invalide

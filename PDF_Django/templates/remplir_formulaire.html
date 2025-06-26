@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h2>Formulaire : {{ template.nom }}</h2>
+    <p>{{ template.desc }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary mt-3">Créer PDF</button>
+    </form>
+
+    <a href="{% url 'list_templates' %}" class="btn btn-link mt-2"><< Liste des modèles</a>
+{% endblock %}

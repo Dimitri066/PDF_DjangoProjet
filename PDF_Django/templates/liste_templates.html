@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Choisis ton template :)</h2>
+    <ul class="list-group">
+        {% for template in templates %}
+            <li class="list-group-item">
+                <a href="{% url 'remplir_formulaire' template.id %}">
+                    <strong>{{ template.nom }}</strong>
+                </a>
+                <div style="font-size: small; color: #666;">
+                    {{ template.desc }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
