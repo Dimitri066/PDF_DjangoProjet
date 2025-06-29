@@ -7,7 +7,7 @@ from django import forms
 
 
 def generer_formulaire(formulaire_json):
-    """ Ce programme va géneré le formulaire à l'aide du code JSON fourni en entrée via l'interface
+    """ Ce programme va géneré une classe formulaire à l'aide du code JSON fourni en entrée via l'interface
     TemplateAdmin """
 
     champs = {}
@@ -36,7 +36,7 @@ def renvoie_liste_templates(request):
     return render(request, "liste_templates.html", {"templates": Template.objects.all()})
 
 def remplir_formulaire(request, id_template):
-    """ Affiche le formulaire, attends la complétion et ensuite génére le PDF"""
+    """ Affiche le formulaire, attends la complétion et ensuite génère le PDF"""
     template = Template.objects.get(pk=id_template)
     formulaireGenere = generer_formulaire(template.json)
 

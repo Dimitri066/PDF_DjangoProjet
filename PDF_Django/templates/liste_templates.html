@@ -1,13 +1,18 @@
 {% extends "base.html" %}
+<!-- Cette page sert à affichier la liste des templates (étendue par base.html) (Squelette généré par IA puis modifié)-->
 
-{% block content %}
+{% block centre %}
     <h2>Choisis ton template :)</h2>
+    <!-- Liste des templates -->
     <ul class="list-group">
         {% for template in templates %}
+            <!-- Affichage d'un template  -->
             <li class="list-group-item">
+                <!-- création du lien vers le formulaire -->
                 <a href="{% url 'remplir_formulaire' template.id %}">
                     <strong>{{ template.nom }}</strong>
                 </a>
+                <!-- description du template-->
                 <div style="font-size: small; color: #666;">
                     {{ template.desc }}
                 </div>

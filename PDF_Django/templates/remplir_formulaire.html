@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
+<!-- Cette page sert à afficher le formulaire avec cryspy forms (Squelette généré par IA puis modifié)-->
 
 {% block content %}
+    <!-- "Entête"-->
     <h2>Formulaire : {{ template.nom }}</h2>
     <p>{{ template.desc }}</p>
 
     <form method="post">
-        {% csrf_token %}
+        {% csrf_token %} <!-- Sécurité d'envoi-->
         {{ form|crispy }}
         <button type="submit" class="btn btn-primary mt-3">Créer PDF</button>
     </form>

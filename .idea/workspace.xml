@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fdd832f9-50f6-433e-9003-ec2799208525" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF_Django/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Django/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF_Django/templates/liste_templates.html" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Django/templates/liste_templates.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF_Django/templates/remplir_formulaire.html" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Django/templates/remplir_formulaire.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF_Django/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Django/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PDF_Django/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PDF_Django/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
